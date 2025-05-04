@@ -1,0 +1,79 @@
+// ARQUIVO DE TESTE - Personalizações do Chatwoot
+// --------------------------------------------
+
+// 1. COR PRINCIPAL DO TEMA
+// Esta é a cor que aparece em botões, links, etc.
+$custom-color-primary: #ff7c1f; // Laranja
+$custom-color-hover: #e86b10;   // Laranja escuro para hover
+
+// Botões primários
+.button.primary,
+.woot-button--primary,
+.button.submit,
+.bg-woot-500 {
+  background-color: $custom-color-primary !important;
+  
+  &:hover {
+    background-color: $custom-color-hover !important;
+  }
+}
+
+// Links e textos destacados
+a, 
+.text-woot-500,
+.conversations-list-wrap .conversation:hover,
+.text-woot-600 {
+  color: $custom-color-primary !important;
+}
+
+// Bordas e elementos de destaque
+.border-woot-500,
+.tabs-title.is-active a {
+  border-color: $custom-color-primary !important;
+}
+
+// 2. COR DE FUNDO DO TEMA ESCURO
+// --------------------------------------------
+// Descomente esta seção se quiser testar uma cor diferente para o tema escuro
+
+/*
+.dark\:bg-slate-900 {
+  background-color: #112233 !important; // Azul muito escuro
+}
+
+.dark\:bg-slate-800 {
+  background-color: #1a3344 !important; // Azul escuro
+}
+
+.dark\:bg-slate-700 {
+  background-color: #234455 !important; // Azul médio-escuro
+}
+*/
+
+// 3. ARREDONDAMENTO DE BORDAS
+// --------------------------------------------
+// Descomente esta seção se quiser cantos mais arredondados
+
+/*
+.rounded-md {
+  border-radius: 8px !important;
+}
+
+.button {
+  border-radius: 8px !important;
+}
+*/
+
+// 4. ESPAÇAMENTO E TAMANHO DE FONTE
+// --------------------------------------------
+// Descomente esta seção se quiser testar diferentes tamanhos
+
+/*
+.text-sm {
+  font-size: 0.9rem !important; 
+}
+
+p, li, a {
+  line-height: 1.6 !important;
+}
+*/
