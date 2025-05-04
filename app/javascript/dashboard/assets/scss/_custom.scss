@@ -1,79 +1,43 @@
 // ARQUIVO DE TESTE - Personalizações do Chatwoot
 // --------------------------------------------
 
-// 1. COR PRINCIPAL DO TEMA
-// Esta é a cor que aparece em botões, links, etc.
-$custom-color-primary: #ff7c1f; // Laranja
-$custom-color-hover: #e86b10;   // Laranja escuro para hover
+/* ====== MODIFICAÇÕES DE TESTE ====== */
 
-// Botões primários
-.button.primary,
-.woot-button--primary,
-.button.submit,
-.bg-woot-500 {
-  background-color: $custom-color-primary !important;
-  
-  &:hover {
-    background-color: $custom-color-hover !important;
+// 1. CORES DE BACKGROUND (mudança chamativa)
+.bg-white {
+    background-color: #ffebf2 !important; // Rosa claro chamativo
   }
-}
-
-// Links e textos destacados
-a, 
-.text-woot-500,
-.conversations-list-wrap .conversation:hover,
-.text-woot-600 {
-  color: $custom-color-primary !important;
-}
-
-// Bordas e elementos de destaque
-.border-woot-500,
-.tabs-title.is-active a {
-  border-color: $custom-color-primary !important;
-}
-
-// 2. COR DE FUNDO DO TEMA ESCURO
-// --------------------------------------------
-// Descomente esta seção se quiser testar uma cor diferente para o tema escuro
-
-/*
-.dark\:bg-slate-900 {
-  background-color: #112233 !important; // Azul muito escuro
-}
-
-.dark\:bg-slate-800 {
-  background-color: #1a3344 !important; // Azul escuro
-}
-
-.dark\:bg-slate-700 {
-  background-color: #234455 !important; // Azul médio-escuro
-}
-*/
-
-// 3. ARREDONDAMENTO DE BORDAS
-// --------------------------------------------
-// Descomente esta seção se quiser cantos mais arredondados
-
-/*
-.rounded-md {
-  border-radius: 8px !important;
-}
-
-.button {
-  border-radius: 8px !important;
-}
-*/
-
-// 4. ESPAÇAMENTO E TAMANHO DE FONTE
-// --------------------------------------------
-// Descomente esta seção se quiser testar diferentes tamanhos
-
-/*
-.text-sm {
-  font-size: 0.9rem !important; 
-}
-
-p, li, a {
-  line-height: 1.6 !important;
-}
-*/
+  
+  .dark\:bg-slate-900 {
+    background-color: #2a0944 !important; // Roxo escuro
+  }
+  
+  .dark\:bg-slate-800 {
+    background-color: #3b185f !important; // Roxo médio
+  }
+  
+  // 2. CORES DE TEXTO
+  .text-slate-600, 
+  .text-slate-800,
+  .dark\:text-slate-100 {
+    color: #ff5200 !important; // Laranja vibrante para textos
+  }
+  
+  // 3. BOTÕES E ELEMENTOS DE AÇÃO
+  .bg-woot-500,
+  .dark\:bg-woot-500,
+  .button.primary {
+    background-color: #00d4ff !important; // Azul ciano
+  }
+  
+  // 4. ELEMENTOS DE DESTAQUE
+  .tabs-title.is-active a {
+    border-color: #00d4ff !important;
+    color: #00d4ff !important;
+  }
+  
+  // 5. BORDAS
+  .border-slate-50,
+  .dark\:border-slate-700 {
+    border-color: #00d4ff !important; // Bordas ciano
+  }
