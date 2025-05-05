@@ -47,16 +47,6 @@ const primaryMenuItems = accountId => [
     roles: ['administrator'],
   },
   {
-    icon: 'library',
-    key: 'helpcenter',
-    label: 'HELP_CENTER.TITLE',
-    featureFlag: FEATURE_FLAGS.HELP_CENTER,
-    alwaysVisibleOnChatwootInstances: true,
-    toState: frontendURL(`accounts/${accountId}/portals`),
-    toStateName: 'default_portal_articles',
-    roles: ['administrator'],
-  },
-  {
     icon: 'settings',
     key: 'settings',
     label: 'SETTINGS',
